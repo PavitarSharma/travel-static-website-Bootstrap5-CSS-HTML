@@ -130,18 +130,51 @@ button {
   margin-top: 2rem !important;
   overflow-x: hidden;
   padding-top: 5rem;
+  position: relative;
+  margin-bottom: 5rem;
 }
 .banner-wrapper span {
   color: var(--color-red);
 }
 
 .destination-wrapper .card {
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .destination-wrapper i {
   color: var(--color-red);
 }
+
+.banner-wrapper .box {
+  display: flex;
+  background: var(--color-white);
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0.2rem;
+  width: 80%;
+  padding: 0.8rem 0;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.banner-wrapper .box .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.banner-wrapper .box .search {
+   background: #3DB3AD;
+   padding: 1rem 2rem;
+   font-size: 1.5rem;
+   border-radius: 20px;
+
+}
+
 
 /* Services */
 .services-wrapper {
@@ -239,6 +272,7 @@ footer i {
     border-radius: 50%;
     background: var(--color-red);
     cursor: pointer;
+    object-fit: cover;
 }
 
 footer i:hover {
@@ -298,5 +332,16 @@ footer i:hover {
         flex-direction: column;
         gap: 2rem;
         align-items: center;
+    }
+
+    .banner-wrapper {
+      margin-bottom: 5rem;
+    }
+    .banner-wrapper .box {
+      width: 100%;
+    }
+
+    .tile p {
+      font-size: 12px;
     }
 }
